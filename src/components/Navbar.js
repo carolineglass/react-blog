@@ -15,5 +15,3 @@ const Navbar = () => {
 }
 
 export default Navbar;
-
-//stateless functional component

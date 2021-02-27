@@ -1,11 +1,16 @@
-import Blog from './Blog'
+import Blog from './Blog';
 
-const BlogList = ( {blogs} ) => {
+const BlogList = ( { blogs, handleDelete } ) => {
+
     return (
-        <div>
-            {blogs.map(blog => <Blog blogObj={blog} key={blog.id} />)}
+        <div className="blog-list">
+            {blogs.map(blog => 
+                <Blog 
+                    blogObj={blog} 
+                    key={blog.id} 
+                    handleDelete={handleDelete}/>)}
         </div>  
     )
 }
 
-export default BlogList
+export default BlogList;
